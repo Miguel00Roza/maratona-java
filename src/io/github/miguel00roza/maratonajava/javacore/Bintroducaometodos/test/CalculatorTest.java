@@ -8,5 +8,7 @@ public class CalculatorTest {
 
         calculator.sumTwoNumbers();
         calculator.subtractTwoNumbers();
+        calculator.multiplyTwoNumbers(5, 1.2);
+        calculator.dividingTwoNumbers(10, 3);
     }
 }

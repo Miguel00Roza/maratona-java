@@ -8,4 +8,10 @@ public class Calculator {
     public void subtractTwoNumbers() {
         System.out.println(77 - 10);
     }
+    public void multiplyTwoNumbers(double numberA, double numberB){
+        System.out.println(numberA * numberB);
+    }
+    public void dividingTwoNumbers(double numberA, double numberB){
+        System.out.println(numberA / numberB);
+    }
 }

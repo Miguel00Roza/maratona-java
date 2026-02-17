@@ -35,7 +35,7 @@ public class TiposPrimitivos {
         // String
         /*
         String não é um tipo primitivo porem eu vou colocar aqui
-        String é uma classe
+        String é uma classe - Variável de referência
         */
 
         String nome = "Miguel"; // Como string é uma classe você deve declarar com letra maiúscula

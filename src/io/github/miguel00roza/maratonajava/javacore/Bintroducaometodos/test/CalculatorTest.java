@@ -11,6 +11,8 @@ public class CalculatorTest {
         calculator.multiplyTwoNumbers(5, 1.2);
 
         double resultado = calculator.dividingTwoNumbers(10, 5);
-        System.out.println(resultado);
+        int[] numbers = {1, 3, 5, 7, 10};
+        calculator.sumArray(numbers);
+        calculator.sumVarArgs(2, 4, 5, 6, 1, 2);
     }
 }

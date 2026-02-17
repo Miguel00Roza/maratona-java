@@ -11,7 +11,7 @@ public class Calculator {
     public void multiplyTwoNumbers(double numberA, double numberB){
         System.out.println(numberA * numberB);
     }
-    public void dividingTwoNumbers(double numberA, double numberB){
-        System.out.println(numberA / numberB);
+    public double dividingTwoNumbers(double numberA, double numberB){
+        return numberA / numberB;
     }
 }

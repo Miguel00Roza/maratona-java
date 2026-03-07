@@ -8,6 +8,9 @@ public class Pessoa {
     Atributo protected: Permite acesso a propriedades do mesmo pacote ou então de suas subclasses
      */
 
+    public Pessoa(String name){
+        this.name = name;
+    }
 
     public void print() {
         System.out.println(this.name);

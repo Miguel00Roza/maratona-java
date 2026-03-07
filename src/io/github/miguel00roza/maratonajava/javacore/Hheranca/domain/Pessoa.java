@@ -1,12 +1,15 @@
 package io.github.miguel00roza.maratonajava.javacore.Hheranca.domain;
 
 public class Pessoa {
-    private String name;
-    private String cpf;
-    private Endereco endereco;
+    protected String name;
+    protected String cpf;
+    protected Endereco endereco;
+    /*
+    Atributo protected: Permite acesso a propriedades do mesmo pacote ou então de suas subclasses
+     */
 
 
-    public void print(){
+    public void print() {
         System.out.println(this.name);
         System.out.println(this.cpf);
         System.out.println(this.endereco.getRua());

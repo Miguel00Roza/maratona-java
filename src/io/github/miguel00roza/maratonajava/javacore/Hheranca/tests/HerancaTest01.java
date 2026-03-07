@@ -20,7 +20,7 @@ public class HerancaTest01 {
         funcionario.setName("Sasuke Uchiha");
         funcionario.setCpf("676767676767");
         funcionario.setEndereco(endereco);
-        funcionario.setSalario(4500.0);
+        funcionario.setSalary(4500.0);
         funcionario.print();
     }
 }

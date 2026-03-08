@@ -1,26 +1,23 @@
 package io.github.miguel00roza.maratonajava.javacore.Kenum.domain;
 
 public class Customer {
-    public enum TipoPagamento {
-        DEBITO, CREDITO
-    }
     private String name;
-    private TipoCliente tipoCliente;
-    private TipoPagamento tipoPagamento;
+    private CustomerType customerType;
+    private PaymentType paymentType;
 
-    public Customer(String name, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
+    public Customer(String name, CustomerType customerType, PaymentType paymentType) {
         this.name = name;
-        this.tipoCliente = tipoCliente;
-        this.tipoPagamento = tipoPagamento;
+        this.customerType = customerType;
+        this.paymentType = paymentType;
     }
 
     @Override
     public String toString() {
         return "Custumer{" +
                 "name='" + name + '\'' +
-                ", tipoCliente=" + tipoCliente +
-                ", tipoClienteInt=" + tipoCliente.VALUE +
-                ", tipoPagamento=" + tipoPagamento +
+                ", tipoCliente=" + customerType +
+                ", tipoClienteInt=" + customerType.VALUE +
+                ", PaymentType=" + paymentType +
                 '}';
     }
 
@@ -32,7 +29,7 @@ public class Customer {
         this.name = name;
     }
 
-    public TipoCliente getTipoCliente() {
-        return tipoCliente;
+    public CustomerType getCustomerType() {
+        return customerType;
     }
 }

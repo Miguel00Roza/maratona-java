@@ -5,4 +5,8 @@ public class Developer extends Employee {
         super(name, salary);
     }
 
+    @Override
+    public void calculateBonus(){
+        this.salary += this.salary * 0.1;
+    }
 }

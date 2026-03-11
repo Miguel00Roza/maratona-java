@@ -3,18 +3,22 @@ package io.github.miguel00roza.maratonajava.javacore.Lclassesabstratas.domain;
 public abstract class Employee {
     // A classe abstrata funciona como um molde
     protected String name;
-    protected double Salary;
+    protected double salary;
 
     public Employee(String name, double salary) {
         this.name = name;
-        Salary = salary;
+        this.salary = salary;
+        calculateBonus();
     }
 
     @Override
     public String toString() {
         return this.getClass().getSimpleName() +"{" +
                 "name='" + name + '\'' +
-                ", Salary=" + Salary +
+                ", salary=" + salary +
                 '}';
     }
+
+    public abstract void calculateBonus();
+    // Sou obrigado a sobrescrever metodos abstratos nos metodos concretos
 }

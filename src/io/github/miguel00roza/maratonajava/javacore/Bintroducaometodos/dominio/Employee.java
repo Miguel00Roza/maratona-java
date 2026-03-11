@@ -30,6 +30,6 @@ public class Employee {
             sumSalaries += salary;
         }
         double average = sumSalaries / this.salaries.length;
-        System.out.println("The average Salary is: " + average);
+        System.out.println("The average salary is: " + average);
     }
 }

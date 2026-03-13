@@ -1,5 +1,6 @@
 package io.github.miguel00roza.maratonajava.javacore.Minterfaces.test;
 
+import io.github.miguel00roza.maratonajava.javacore.Minterfaces.domain.DataLoader;
 import io.github.miguel00roza.maratonajava.javacore.Minterfaces.domain.DatabaseLoader;
 import io.github.miguel00roza.maratonajava.javacore.Minterfaces.domain.FileLoader;
 
@@ -11,7 +12,12 @@ public class DataLoaderTest {
         databaseLoader.load();
         databaseLoader.remove();
         databaseLoader.checkPermission();
+
+        DatabaseLoader.retriveMaxDataSize();
+        DataLoader.retriveMaxDataSize();
+
         fileLoader.load();
+        fileLoader.remove();
         fileLoader.remove();
     }
 }
